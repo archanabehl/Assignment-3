@@ -1,0 +1,192 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+/*This will help to wrap it nicely*/
+@media all and (max-width: 600px){
+	.container{
+		flex-wrap: wrap;
+	}
+}
+
+header{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex: 1 1 100%;
+	font-weight: 800;
+	font-size: 16px;
+	background-color: #326983;
+}
+
+.branding{
+	margin-right: auto;
+	margin-left:10rem;
+	font-weight: bolder;
+	font-size: 24px;
+	color:White;
+	cursor: pointer;
+}
+
+ul{
+	display: flex;
+	flex-grow: 1;
+	margin-right: 10rem;
+}
+
+li{
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+li a{
+	color:yellow;
+	text-decoration: none;
+	padding: 1rem;
+	transition: all 0.3s ease 0s;
+}
+
+li a:hover{
+	color: #000889;
+}
+
+main{
+	padding-left:10rem;
+	padding-right:10rem;
+	display: flex;
+	background-color: #e5e5e5;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	margin-right: 5rem;
+	width: 80%;
+	/*min-width: 50%;*/
+}
+
+section p{
+	font-size: 20px;
+}
+
+
+section p::first-letter {
+	font-size: 400%;
+	/*-webkit-initial-letter: 3;*/
+	/*initial-letter:3;*/
+	font-weight: bolder;
+	color: #c69c6d;
+	margin: 0 .2em 0 0;
+	vertical-align: center;
+}
+
+section h2{
+	display: flex;
+	justify-content: flex-end;
+	cursor: pointer;
+	
+}
+
+section h2:hover{
+	color:#000889;
+
+}
+
+hr{
+	border-style: solid;
+	border-width: .5px;
+	border-color: black;
+	width: 100%;
+}
+
+hr:last-child{
+	margin-bottom: 15%;
+}
+/*hr:nth-child(1){
+	margin-bottom: 
+}
+*/
+/*The below 2 id's will hide and reveal text upon hover over*/
+#more-info{
+	display: none;
+	font-size: 20px;
+	
+}
+#read-more:hover ~ #more-info{
+	display: block;
+}
+aside{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	}
+
+aside p{
+	width: 60%;
+}
+
+aside img{
+	margin-top: 50px;
+}
+
+.yellowsection{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+	background-color:#faed10;
+}
+
+button{
+	border-style: none;
+	border-radius: 5px;
+	background-color: #005386;
+	color: white;
+	width: 20%;
+	height: 40%;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.blacksection{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 300px;
+	background-color:#1a2632;
+}
+
+.blacksection h1{
+	font-weight: bolder;
+	font-size: 30px;
+	color: #faed10;
+}
+
+.socialmedia{
+	display: flex;
+	justify-content: space-around;
+	width: 8%;
+}
+
+.blacksection p{
+	margin-top:100px;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
